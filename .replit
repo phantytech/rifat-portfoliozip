@@ -1,4 +1,4 @@
-modules = ["nodejs-20"]
+modules = ["nodejs-20", "web"]
 [nix]
 channel = "stable-25_05"
 packages = ["unzip"]
@@ -36,3 +36,7 @@ localPort = 3001
 [[ports]]
 localPort = 5000
 externalPort = 80
+
+[[ports]]
+localPort = 34061
+externalPort = 3000
